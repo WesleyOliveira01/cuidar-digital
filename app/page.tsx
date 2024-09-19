@@ -1,6 +1,6 @@
 import Carousel from "@/components/Carousel/_Carousel";
+import CTAForm from "@/components/CTAForm";
 import ServiceCard from "@/components/ServiceCard";
-import { Button } from "@/components/ui/button";
 
 import Container from "@/components/ui/Container";
 import { FileStack, HeartHandshake, HeartPulse, Laptop } from "lucide-react";
@@ -49,7 +49,7 @@ const Home = () => {
               telemedicina, dispositivos vestíveis e monitoramento remoto. Com
               nossa solução, você pode:
             </p>
-            <ul className="list-disc ml-8 mt-6 text-xl flex flex-col gap-2 text-sky-600" >
+            <ul className="list-disc ml-8 mt-6 text-xl flex flex-col gap-2 text-sky-600">
               <li>
                 Realizar{" "}
                 <strong className="text-sky-500">
@@ -148,37 +148,10 @@ const Home = () => {
             </p>
           </div>
           <div className="w-[50%] py-11 px-4">
-            <h1 className="text-sky-500 font-semibold text-2xl text-center mb-2">Preencha o Formulário Abaixo para Saber Mais:</h1>
-            <form
-              action=""
-              className="flex flex-col gap-2 bg-sky-400 p-5 rounded-lg shadow-lg w-[70%] mx-auto"
-              id="contactForm"
-            >
-              <label htmlFor="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" placeholder="Nome" />
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Email" />
-              <label htmlFor="telefone">Telefone:</label>
-              <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="Telefone"
-              />
-              <label htmlFor="mensagem">
-                Qual sua principal necessidade de saúde?:
-              </label>
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                cols={30}
-                rows={10}
-                placeholder="Mensagem"
-              ></textarea>
-              <Button variant="destructive" type="submit">
-                Quero Saber Mais!
-              </Button>
-            </form>
+            <h1 className="text-sky-500 font-semibold text-2xl text-center mb-2">
+              Preencha o Formulário Abaixo para Saber Mais:
+            </h1>
+            <CTAForm />
           </div>
         </Container>
       </section>
